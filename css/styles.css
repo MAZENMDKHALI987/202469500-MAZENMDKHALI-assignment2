@@ -100,16 +100,20 @@ body.dark .site-header {
 }
 
 .nav a {
+  display: inline-block;
   color: var(--text-soft);
   font-weight: 500;
-  transition: color 0.2s ease;
+  transition: color 0.2s ease, transform 0.2s ease, text-shadow 0.2s ease;
 }
 
+/* 4. Animation and Transitions */
 .nav a:hover,
 .nav a:focus-visible {
   color: var(--primary);
+  transform: scale(1.12);
+  text-shadow: 0 0 12px var(--primary);
 }
-
+/*END 4. Animation and Transitions */
 .theme-toggle {
   border: 1px solid var(--border);
   background: var(--panel);
@@ -404,6 +408,55 @@ body.dark .site-header {
   min-height: 1.5rem;
   color: var(--primary-dark);
   font-weight: 600;
+}
+
+.form-status.is-error {
+  color: #b42318;
+}
+
+body.dark .form-status.is-error {
+  color: #ff938a;
+}
+
+.sent-messages {
+  padding: 1.5rem;
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 22px;
+  box-shadow: var(--shadow);
+}
+
+.sent-messages summary {
+  color: var(--text);
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.sent-messages-empty {
+  color: var(--text-soft);
+  margin-top: 0.8rem;
+}
+
+.sent-messages-list {
+  display: grid;
+  gap: 0.8rem;
+  list-style: none;
+  margin-top: 0.8rem;
+}
+
+.sent-messages-list li {
+  display: grid;
+  gap: 0.2rem;
+  overflow-wrap: anywhere;
+  padding: 0.8rem;
+  border-radius: 12px;
+  background: var(--bg);
+}
+
+.sent-messages-list li span,
+.sent-messages-list li p {
+  color: var(--text-soft);
 }
 
 .site-footer {
