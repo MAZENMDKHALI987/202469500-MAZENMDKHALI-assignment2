@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Mazen's portfolio showcasing Java and JavaScript projects, including a classroom reservation system and a browser game."
+    />
+    <title>Mazen Mdkhali | Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-bar">
+        <a href="#home" class="brand">Mazen Mdkhali</a>
+        <nav class="nav" aria-label="Main navigation">
+          <a href="#about">About</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </nav>
+        <button id="themeToggle" class="theme-toggle" aria-label="Toggle light and dark mode">
+          <span class="toggle-icon">🌙</span>
+        </button>
+      </div>
+    </header>
+
+    <main id="home">
+      <section class="hero section">
+        <div class="container hero-layout">
+          <div class="hero-copy">
+            <p id="greeting" class="eyebrow">Hello</p>
+            <h1>I build practical software solutions.</h1>
+            <p class="lead">
+              I’m a computer science student focused on creating useful Java applications,
+              interactive web experiences, and clean user-centered designs.
+            </p>
+            <div class="cta-group">
+              <a class="btn btn-primary" href="#projects">View Projects</a>
+              <a class="btn btn-secondary" href="#contact">Contact Me</a>
+            </div>
+            <ul class="quick-stats" aria-label="Quick summary">
+              <li><strong>2+</strong><span>Major projects</span></li>
+              <li><strong>Java</strong><span>Desktop logic</span></li>
+              <li><strong>JS</strong><span>Interactive UX</span></li>
+            </ul>
+          </div>
+
+          <div class="hero-card">
+            <div class="profile-card">
+              <div class="avatar">MA</div>
+              <h2>Mazen Mdkhali</h2>
+              <p>Student Developer</p>
+              <div class="status-row">
+                <span class="dot"></span>
+                Available for collaborations
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="section about">
+        <div class="container">
+          <div class="section-heading">
+            <p class="section-kicker">About Me</p>
+            <h2>Learning by building meaningful projects.</h2>
+          </div>
+
+          <div class="about-grid">
+            <div class="about-text">
+              <p>
+                I am a computer science student who enjoys turning ideas into working
+                applications. My interests include problem solving, user experience, and writing
+                clear, maintainable code.
+              </p>
+              <p>
+                Through my coursework and personal projects, I have developed skills in Java,
+                JavaScript, object-oriented design, and responsive front-end development. I enjoy
+                designing software that is both functional and easy to use.
+              </p>
+            </div>
+
+            <div class="skill-panel">
+              <h3>Core Skills</h3>
+              <div class="tags">
+                <span>Java</span>
+                <span>JavaScript</span>
+                <span>HTML5</span>
+                <span>CSS3</span>
+                <span>OOP</span>
+                <span>Responsive Design</span>
+                <span>UI/UX</span>
+                <span>Problem Solving</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="section projects">
+        <div class="container">
+          <div class="section-heading">
+            <p class="section-kicker">Projects</p>
+            <h2>Selected work and learning experiences.</h2>
+          </div>
+
+          <div class="project-grid">
+            <article class="project-card">
+              <img
+                src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=900&q=80"
+                alt="Students collaborating in a classroom"
+              />
+              <div class="project-body">
+                <span class="project-tag">Java Application</span>
+                <h3>Classroom Reservation System</h3>
+                <p>
+                  A Java-based reservation platform that allows users to check room availability,
+                  book classrooms, and prevent schedule conflicts. The system is designed for ease of
+                  use and supports time-based reservations for academic needs.
+                </p>
+                <ul>
+                  <li>Room availability checking</li>
+                  <li>Reservation conflict prevention</li>
+                  <li>Simple admin and user workflow</li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <img
+                src="https://images.unsplash.com/photo-1511512578047-dfb367046420?auto=format&fit=crop&w=900&q=80"
+                alt="Game controller and gaming setup"
+              />
+              <div class="project-body">
+                <span class="project-tag">JavaScript Game</span>
+                <h3>JavaScript Game</h3>
+                <p>
+                  A browser game built with JavaScript that focuses on quick interaction, scoring,
+                  and engaging gameplay. The project highlights front-end interactivity and dynamic UI
+                  updates in a playable format.
+                </p>
+                <ul>
+                  <li>Dynamic score tracking</li>
+                  <li>Fast user interaction</li>
+                  <li>Responsive browser gameplay</li>
+                </ul>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section contact">
+        <div class="container contact-layout">
+          <div class="contact-copy">
+            <p class="section-kicker">Contact</p>
+            <h2>Let’s build something useful together.</h2>
+            <p>
+              I’m interested in opportunities to collaborate, learn, and create meaningful software
+              projects. Feel free to reach out with questions, ideas, or project requests.
+            </p>
+          </div>
+
+          <form id="contactForm" class="contact-form">
+            <label>
+              Name
+              <input type="text" name="name" placeholder="Your name" required />
+            </label>
+            <label>
+              Email
+              <input type="email" name="email" placeholder="Your email" required />
+            </label>
+            <label>
+              Message
+              <textarea name="message" rows="5" placeholder="Write your message" required></textarea>
+            </label>
+            <button type="submit" class="btn btn-primary">Send Message</button>
+            <p id="formStatus" class="form-status" aria-live="polite"></p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-content">
+        <p>© 2026 Mazen Mdkhali</p>
+        <a href="#home">Back to top</a>
+      </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
